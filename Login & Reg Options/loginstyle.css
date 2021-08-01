@@ -220,7 +220,7 @@ form.register-form{
   pointer-events: none;
 }
 
-.container.registration-mode .left-panel{
+.container.registration-mode .right-panel{
   pointer-events: all;
 }
 
@@ -233,7 +233,7 @@ form.register-form{
   opacity: 0;
 }
 
-.container.registration-mode form.registration-form{
+.container.registration-mode form.register-form{
   z-index: 2;
   opacity: 1;
 }
@@ -248,7 +248,7 @@ form.register-form{
     width: 1500px;
     height: 1500px;
     left: 30%;
-    bottom: 60%;
+    bottom: 68%;
     transform: translateX(-50%);
     right: initial;
     top: initial;
@@ -276,7 +276,7 @@ form.register-form{
   }
 
   .panel .content{
-    padding:right: 15%;
+    padding-right: 15%;
     transition: 0.9s 0.8s ease-in-out;
   }
 
@@ -284,7 +284,7 @@ form.register-form{
     font-size: 1.2rem;
   }
 
-  panel p{
+  .panel p{
     font-size: 0.7rem;
     padding: 0.5rem 0;
   }
@@ -313,7 +313,7 @@ form.register-form{
   }
 
   .container.registration-mode:before{
-    transform: translate(-50%, 100);
+    transform: translate(-50%, 100%);
     bottom: 32%;
     right: initial;
   }

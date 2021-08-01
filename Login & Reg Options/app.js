@@ -1,4 +1,4 @@
-const reg_btn = document.querySelector("#login-btn");
+const login_btn = document.querySelector("#login-btn");
 const reg_btn = document.querySelector("#registration-btn");
 const container = document.querySelector(".container");
 
