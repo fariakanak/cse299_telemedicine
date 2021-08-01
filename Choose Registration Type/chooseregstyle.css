@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap", "https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box:
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+input{
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FFF;
+  overflow: hidden;
+}
+
+.forms-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.login-reg{
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: 5;
+  transition: 1s 0.7s ease-in-out;
+}
+
+form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 5rem;
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  transition: 0.2s 0.7s ease-in-out;
+}
+
+.title{
+  font-size: 2.2rem;
+  color: #f6546a;
+  margin-bottom: 10px;
+}
+
+.btn{
+  width: 150px;
+  height: 49px;
+  border: none;
+  outline: none;
+  border-radius: 49px;
+  cursor: pointer;
+  background-color: #f6546a;
+  color:#FFF;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  transition: .5s;
+}
+
+.btn:hover{
+  background-color: #a31225;
+}
+
+.btn.transparent{
+  margin: 0;
+  background: none;
+  border: 2px solid #fff;
+  width: 130px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.image{
+  width: 100%;
+  transition: 1.1s .4s ease-in-out;
+}
+

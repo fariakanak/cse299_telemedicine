@@ -19,7 +19,7 @@ input{
   width: 100%;
   min-height: 100vh;
   background-color: #FFF;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .forms-container{
@@ -29,18 +29,6 @@ input{
   top: 0;
   left: 0;
 }
-
-/*.login-reg{
-  position: absolute;
-  top: 50%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  display: grid;
-  grid-template-columns: 1fr;
-  z-index: 5;
-  transition: 1s 0.7s ease-in-out;
-}*/
 
 form{
   display: flex;

@@ -7,7 +7,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
   <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
   <title>Registration</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="docregstyle.css">
 </head>
 
 <body>
@@ -15,8 +15,9 @@
     <div class="forms-container">
       <div class="login-reg">
 
+
         <form action="" class="register-form">
-          <h2 class="title">Registration for Patients</h2>
+          <h2 class="title">Registration for Doctors</h2>
           <div class="input-field">
             <i class="fa fa-user"></i>
             <input type="text" placeholder="First Name" required>
@@ -37,9 +38,24 @@
             <i class="fas fa-lock"></i>
             <input type="password" placeholder="Password" required>
           </div>
+          <div class="input-field">
+            <i class="fa fa-registered"></i>
+            <input type="number" placeholder="BMDC Registration No" required>
+          </div>
+          <div class="input-field">
+            <i class="fa fa-pen"></i>
+            <input type="text" placeholder="Education Level" required>
+          </div>
+          <div class="input-field">
+            <i class="fa fa-mobile"></i>
+            <input type="tel" placeholder="Contact No" required>
+          </div>
+          <div class="input-field">
+            <i class="fa fa-dollar-sign"></i>
+            <input type="number" min= 0 max="1000" placeholder="Charge per session" required>
+          </div>
           <input type="submit" value="Register" class="btn solid">
         </form>
-
 
       </div>
     </div>
