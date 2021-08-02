@@ -160,7 +160,7 @@ form.register-form{
 }
 
 .right-panel{
-  pointer-events: none;
+  pointer-events: all;
   padding: 3rem 12% 2rem 17%;
 }
 
@@ -188,6 +188,11 @@ form.register-form{
   height: 41px;
   font-weight: 600;
   font-size: 0.8rem;
+  z-index: 100;
+}
+
+.btn.transparent:hover{
+  background-color: #a31225;
 }
 
 .image{
