@@ -6,6 +6,44 @@
   box-sizing: border-box;
 }
 
+header{
+  background-color: #f6546a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  height: 120px;
+}
+
+li, a{
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color:#FFF;
+  text-decoration: none;
+}
+
+.logo{
+  cursor: pointer;
+}
+
+.nav-links{
+  list-style: none;
+}
+
+.nav-links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+  font-size: larger;
+}
+
 body{
   font-family: 'Roboto', sans-serif;
 }
@@ -31,7 +69,7 @@ input{
 .title{
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 30%;
   transform: translate(-50%, -50%);
   font-size: 3.2rem;
   color: #f6546a;
@@ -41,7 +79,7 @@ input{
 .h2-title{
   position: absolute;
   left: 50%;
-  top: 58%;
+  top: 38%;
   transform: translate(-50%, -50%);
   font-size: 1.5rem;
   color: #f6546a;
@@ -53,7 +91,7 @@ input{
   height: 70px;
   position: absolute;
   left: 50%;
-  top: 68%;
+  top: 48%;
   transform: translate(-50%, -50%);
   border: none;
   outline: none;
