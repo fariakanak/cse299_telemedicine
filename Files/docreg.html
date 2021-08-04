@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+  <title>Registration for Doctors</title>
+  <link rel="stylesheet" href="docregstyle.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="forms-container">
+      <div class="login-reg">
+
+
+        <form action="" class="register-form">
+          <h2 class="title">Registration for Doctors</h2>
+          <div class="input-field">
+            <i class="fa fa-user"></i>
+            <input type="text" placeholder="First Name" required>
+          </div>
+          <div class="input-field">
+            <i class="fa fa-user"></i>
+            <input type="text" placeholder="Last Name" required>
+          </div>
+          <div class="input-field">
+            <i class="fa fa-calendar"></i>
+            <input type="text" placeholder="Date of Birth (dd-mm-yyyy)" value=""
+            min="1930-01-01" required>
+          </div>
+          <div class="input-field">
+            <i class="fa fa-envelope"></i>
+            <input type="text" placeholder="Email ID" required>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" required>
+          </div>
+          <div class="input-field">
+            <i class="fa fa-registered"></i>
+            <input type="number" placeholder="BMDC Registration No" required>
+          </div>
+          <div class="input-field">
+            <i class="fa fa-pen"></i>
+            <input type="text" placeholder="Education Level" required>
+          </div>
+          <div class="input-field">
+            <i class="fa fa-mobile"></i>
+            <input type="tel" placeholder="Contact No" required>
+          </div>
+          <div class="input-field">
+            <i class="fa fa-dollar-sign"></i>
+            <input type="number" min= 0 max="1000" placeholder="Charge per session" required>
+          </div>
+          <input type="submit" value="Register" class="btn solid">
+        </form>
+      </div>
+    </div>
+
+    <div class="panels-container">
+      <div class="panel left-panel">
+        <img src="img/docreg.svg" class="image" alt="">
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
