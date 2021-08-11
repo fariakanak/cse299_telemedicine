@@ -1,6 +1,18 @@
 <?php 
+				session_start();
 
-include('config.php');
+					include('config.php');
+
+					if(isset($_POST['patient'])) {
+								header("Location: patreg.php");
+								die();
+							}
+					
+					if(isset($_POST['doctor'])) {
+								header("Location: docreg.php");
+								die();
+							}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,10 +31,10 @@ include('config.php');
     <div class="forms-container">
       <div class="login-reg">
 
-        <form action="" class="register-form">
+        <form method="post" action="" class="register-form">
           <h2 class="title">I am a</h2>
-          <a href="patreg.php"><input type="submit" value="Patient" class="btn solid"></a>
-          <a href="docreg.php"><input type="submit" value="Doctor" class="btn solid"></a>
+          <a href="patreg.php"><input type="submit" name="patient" value="Patient" class="btn solid"></a>
+          <a href="docreg.php"><input type="submit" name="doctor" value="Doctor" class="btn solid"></a>
         </form>
       </div>
     </div>
