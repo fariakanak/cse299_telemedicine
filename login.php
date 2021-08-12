@@ -61,12 +61,13 @@
 		  <button type="submit" name="Login" class="btn solid">Log in.</button>
         </form>
 
-
+<!-- 
         <form action="" class="register-form">
           <h2 class="title">I am a</h2>
           <input type="submit" value="Patient" class="btn solid">
           <input type="submit" value="Doctor" class="btn solid">
         </form>
+ -->	
 
 
       </div>
@@ -81,14 +82,16 @@
         </div>
         <img src="img/register.svg" class="image" alt="">
       </div>
-
+<!------
       <div class="panel right-panel">
         <div class="content">
           <h3>Already registered?</h3>
           <p>Please login first!</p>
           <button class="btn transparent" id="login-btn">Login</button>
         </div>
+		
         <img src="img/login.svg" class="image" alt="">
+		-->
       </div>
     </div>
 

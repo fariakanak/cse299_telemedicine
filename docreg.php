@@ -14,12 +14,9 @@
   <div class="container">
     <div class="forms-container">
       <div class="login-reg">
-
-
         <form method="post" action="" class="register-form">
           <h2 class="title">Registration for Doctors</h2>
 		  <?php 
-
 				include('config.php');
 
 

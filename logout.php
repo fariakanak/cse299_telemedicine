@@ -1,3 +1,19 @@
+<?php 
+					session_start();
+
+					include('config.php');
+
+					if(isset($_POST['logno'])) {
+								header("Location: logout.php");
+								die();
+							}
+					
+					if(isset($_POST['logyes'])) {
+								header("Location: choosereg.php");
+								die();
+							}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,10 +31,10 @@
     <img class="logo" src="img/helloDoctor.png" alt="logo">
     <nav>
       <ul class="nav-links">
-        <li><a href="home.html">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li><a href="#">Appointment</a></li>
         <li><a href="#">Nearby Pharmacies</a></li>
-        <li><a href="#">Log Out</a></li>
+        <li><a href="index.php">Log Out</a></li>
       </ul>
     </nav>
   </header>
@@ -26,8 +42,10 @@
   <div class="container">
     <div class="btn-container">
       <h2 class='title'>Are you sure?</h2>
-      <input type="submit" value="No" class="btn1 solid">
-      <input type="submit" value="Yes" class="btn2 solid">
+	  <form method="post">
+      <input type="submit" value="No" name="logno" class="btn1 solid">
+      <input type="submit" value="Yes" name="logyes" class="btn2 solid">
+	  </form>
     </div>
   </div>
 </body>
