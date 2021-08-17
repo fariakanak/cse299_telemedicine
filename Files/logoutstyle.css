@@ -7,7 +7,7 @@
 }
 
 header{
-  background-color: #f6546a;
+  background-color: #3069ab;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,7 +71,7 @@ input{
   top: 30%;
   transform: translate(-50%, -50%);
   font-size: 3.2rem;
-  color: #f6546a;
+  color: #3069ab;
   margin-bottom: 10px;
 }
 
@@ -81,7 +81,7 @@ input{
   top: 38%;
   transform: translate(-50%, -50%);
   font-size: 1.0rem;
-  color: #f6546a;
+  color: #3069ab;
   margin-bottom: 10px;
 }
 
@@ -96,7 +96,7 @@ input{
   outline: none;
   border-radius: 49px;
   cursor: pointer;
-  background-color: #f6546a;
+  background-color: #3069ab;
   color:#FFF;
   text-transform: uppercase;
   font-size: large;
@@ -117,7 +117,7 @@ input{
   border-radius: 49px;
   cursor: pointer;
   background-color: #F8F0E3;
-  color:#f6546a;
+  color:#3069ab;
   text-transform: uppercase;
   font-size: large;
   font-weight: 600;
@@ -126,7 +126,7 @@ input{
 }
 
 .btn1:hover{
-  background-color: #a31225;
+  background-color: #355d89;
   width: 425px;
   height: 85px;
   font-size: larger;
