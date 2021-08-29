@@ -38,13 +38,23 @@
               <label for="Contact No of the Patient"><i class="fa fa-mobile"></i> Contact No of the Patient (01XXXXXXXXX)</label>
             </div>
           </div>
+          <div class="row">
+            <div class="input-field">
+              <input type="text" id="Prescribed by" required>
+              <label for="Prescribed by"> <i class="fa fa-user"></i> Prescribed by</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="Field of Practice" required>
+              <label for="Field of Practice"><i class="fa fa-plus-square"></i> Field of Practice</label>
+            </div>
+          </div>
           <div class="input-field">
             <textarea id="Prescription" rows="10" required></textarea>
             <label for="Prescription"><i class="fa fa-prescription"></i> Prescription</label>
           </div>
           <div class="input-field">
             <textarea id="Suggestions" rows="10" required></textarea>
-            <label for="Suggestions"> <i class="fa fa-notes-medical"></i> Suggestions</label>
+            <label for="Suggestions"> <i class="fa fa-notes-medical"></i> Suggestions (Write N/A if not applicable)</label>
           </div>
           <input type="submit" value="Prescribe" class="btn solid">
         </form>
