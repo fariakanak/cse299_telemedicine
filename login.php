@@ -38,7 +38,7 @@
 						   if($row>0){
 
 								$_SESSION['Email']=$row[1];
-								header("Location: profile.php");
+								header("Location: nearbypharma.php");
 								die();
 
 						   } else {

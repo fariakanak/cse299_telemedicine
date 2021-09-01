@@ -7,7 +7,7 @@
 }
 
 header{
-  background-color: #f6546a;
+  background-color: #3069ab;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +18,7 @@ header{
 li, a{
   font-family: 'Titillium Web', sans-serif;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 18px;
   color:#FFF;
   text-decoration: none;
 }
@@ -46,6 +46,9 @@ li, a{
 
 body{
   font-family: 'Roboto', sans-serif;
+  justify-content: center;
+  align-items: center;
+  background: #FFF; 
 }
 
 input{
@@ -65,14 +68,13 @@ input{
   overflow: hidden;
 }
 
-
 .title{
   position: absolute;
   left: 50%;
   top: 30%;
   transform: translate(-50%, -50%);
   font-size: 3.2rem;
-  color: #f6546a;
+  color: #3069ab;
   margin-bottom: 10px;
 }
 
@@ -82,7 +84,7 @@ input{
   top: 38%;
   transform: translate(-50%, -50%);
   font-size: 1.5rem;
-  color: #f6546a;
+  color: #3069ab;
   margin-bottom: 10px;
 }
 
@@ -97,7 +99,7 @@ input{
   outline: none;
   border-radius: 49px;
   cursor: pointer;
-  background-color: #f6546a;
+  background-color: #3069ab;
   color:#FFF;
   text-transform: uppercase;
   font-size: large;
@@ -107,7 +109,10 @@ input{
 }
 
 .btn:hover{
-  background-color: #a31225;
+  background-color: #355d89;
+  width: 475px;
+  height: 95px;
+  font-size: x-large;
 }
 
 .panels-container{
@@ -118,4 +123,128 @@ input{
   left: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.slider{
+  height: 100vh;
+  display: inline-flexbox;
+  position: relative;
+  border-radius: 0px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slider .slides{
+  z-index: 1;
+  position: absolute;
+  width: 500%;
+  height: 500%;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  margin: auto;
+  width: 800px;
+  height: auto;
+}
+
+.navigation-manual{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  margin-top: 460px;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #FFF;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #3069ab;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+#radio5:checked ~ .first{
+  margin-left: -80%;
+}
+
+#radio6:checked ~ .first{
+  margin-left: -100%;
+}
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid #3069ab;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #3069ab;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #3069ab;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #3069ab;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #3069ab;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+  background: #3069ab;
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn6{
+  background: #3069ab;
 }
