@@ -28,7 +28,7 @@ input{
   width: 2000px;
   height: 2000px;
   border-radius: 50%;
-  background: linear-gradient(-45deg, #f6546a, #a31225);
+  background: linear-gradient(-45deg, #3069ab, #355d89);
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
@@ -70,7 +70,7 @@ form{
 
 .title{
   font-size: 2.2rem;
-  color: #f6546a;
+  color: #3069ab;
   margin-bottom: 10px;
 }
 
@@ -89,7 +89,7 @@ form{
 .input-field i{
   text-align: center;
   line-height: 55px;
-  color: #f6546a;
+  color: #3069ab;
   font-size: 1.1rem;
 }
 
@@ -104,7 +104,7 @@ form{
 }
 
 .input-field input::placeholder{
-  color: #aaa;
+  color: #1b1c21;
 }
 
 .btn{
@@ -114,7 +114,7 @@ form{
   outline: none;
   border-radius: 49px;
   cursor: pointer;
-  background-color: #f6546a;
+  background-color: #3069ab;
   color:#FFF;
   text-transform: uppercase;
   font-weight: 600;
@@ -123,7 +123,7 @@ form{
 }
 
 .btn:hover{
-  background-color: #a31225;
+  background-color: #355d89;
 }
 
 .panels-container{
@@ -178,7 +178,7 @@ form{
 }
 
 .btn.transparent:hover{
-  background-color: #a31225;
+  background-color: #355d89;
 }
 
 .image{

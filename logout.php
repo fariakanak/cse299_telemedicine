@@ -9,11 +9,12 @@
 							}
 					
 					if(isset($_POST['logyes'])) {
-								header("Location: choosereg.php");
+								header("Location: index.php");
 								die();
 							}
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,25 +32,41 @@
     <img class="logo" src="img/helloDoctor.png" alt="logo">
     <nav>
       <ul class="nav-links">
+		<li><a href="aboutus.html">About Us</a></li>
         <li><a href="index.php">Home</a></li>
         <li><a href="#">Appointment</a></li>
-        <li><a href="#">Nearby Pharmacies</a></li>
-        <li><a href="index.php">Log Out</a></li>
+		<li><a href="prescription.php">Prescription</a></li>
+        <li><a href="nearbypharma.php">Nearby Pharmacies</a></li>
+        <li><a href="https://video-app-4933-9049-dev.twil.io">Join My Appointment</a></li>
+        <li><a href="logout.php">Log Out</a></li>
       </ul>
     </nav>
   </header>
 
   <div class="container">
     <div class="btn-container">
-      <h2 class='title'>Are you sure?</h2>
+      <h2 class='title'>Are you sure you want to log out?</h2>
 	  <form method="post">
-      <input type="submit" value="No" name="logno" class="btn1 solid">
-      <input type="submit" value="Yes" name="logyes" class="btn2 solid">
+      <input type="submit" value="No"  name="logno" class="btn1 solid"> 
+      <input type="submit" value="Yes" name="logyes"  class="btn2 solid">
 	  </form>
     </div>
   </div>
+
+  <script>
+    function goLoggedOutHome(e){
+      console.log(e);
+      e.preventDefault();
+      window.open("/index.php", "_self")
+    }
+    function goLoggedInHome(e){
+      console.log(e);
+      e.preventDefault();
+      window.open("/loggedinhome.php", "_self")
+    }
+  </script>
+
 </body>
-</html>
 
 
 

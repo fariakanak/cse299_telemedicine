@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap", "https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #3069ab;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  height: 120px;
+}
+
+.logo{
+  cursor: pointer;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background: #FFF;
+  margin: 0 auto;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.text{
+  text-align: center;
+}
+
+.contactInfo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.h21{
+  position: absolute;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  color: #3069ab;
+  margin-top: 50px;
+}
+
+.p1{
+  font-size: 24px;
+  font-family: 'Titillium', sans-serif;
+  text-align: justify;
+  color: #1b1c21;
+  margin-top: 105px;
+}
+
+.h22{
+  position: absolute;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  color: #3069ab;
+  margin-top: 115px;
+}
+
+.p2{
+  position: absolute;
+  font-size: 18px;
+  font-family: 'Titillium', sans-serif;
+  text-align: left;
+  color: #1b1c21;
+  margin-top: 160px;
+}
+
+.h23{
+  position: absolute;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  color: #3069ab;
+  margin-top: 115px;
+}
+
+.p3{
+  position: absolute;
+  font-size: 18px;
+  font-family: 'Titillium', sans-serif;
+  text-align: left;
+  color: #1b1c21;
+  margin-top: 160px;
+}
