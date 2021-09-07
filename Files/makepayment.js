@@ -17,10 +17,10 @@ app.use("/ssl-request", async (req, res, next) => {
     total_amount: 100,
     currency: 'EUR',
     tran_id: 'REF123',
-    success_url: '$(process.env.ROOT)/ssl-payment-success',
-    fail_url: '$(process.env.ROOT)/ssl-payment-failure',
-    cancel_url: '$(process.env.ROOT)/ssl-payment-cancel',
-    ipn_url: '$(process.env.ROOT)/ssl-payment-ipn',
+    success_url: '${process.env.DB_ROOT}/ssl-payment-success',
+    fail_url: '${process.env.DB_ROOT}/ssl-payment-failure',
+    cancel_url: '${process.env.DB_ROOT}/ssl-payment-cancel',
+    ipn_url: '${process.env.DB_ROOT}/ssl-payment-ipn',
     shipping_method: 'Courier',
     product_name: 'Computer.',
     product_category: 'Electronic',
@@ -53,15 +53,15 @@ sslcommer.init(data).then(data => {
     //process the response that got from sslcommerz 
     //https://developer.sslcommerz.com/doc/v4/#returned-parameters
     console.log("data", data);
-    if(data?.GatewayPageUrl){
-      return res.status(200).redirect(data?.GatewayPageUrl);
+    if(data?.GatewayPageURL){
+      return res.status(200).redirect(data?.GatewayPageURL);
     }
     else{
       return res.status(400).json({
         message: "SSL session was not successful"
       })
     }
-});
+  });
 });
 
 app.post("/ssl-payment-success", async (req, res, next) =>{
@@ -88,6 +88,6 @@ app.post("/ssl-payment-ipn", async (req, res, next) =>{
   })
 });
 
-app.listen(process.env.PORT,() =>{
-  console.log('App is running on $(process.env.PORT)');
+app.listen(process.env.DB_PORT,() =>{
+  console.log('App is running on ${process.env.DB_PORT}');
 })
