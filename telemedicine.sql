@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 06, 2021 at 04:09 PM
--- Server version: 10.4.19-MariaDB
--- PHP Version: 8.0.7
+-- Generation Time: Sep 07, 2021 at 02:27 PM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -34,6 +34,15 @@ CREATE TABLE `appointment` (
   `App_Date` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `appointment`
+--
+
+INSERT INTO `appointment` (`App_ID`, `P_ID`, `D_ID`, `App_Date`) VALUES
+(4, 2, 1, '2021-09-04 21:09:02'),
+(22, 2, 1, '2021-09-07 12:29:00'),
+(23, 2, 1, '2021-09-08 01:06:00');
+
 -- --------------------------------------------------------
 
 --
@@ -50,19 +59,17 @@ CREATE TABLE `doctor` (
   `Contact_No` varchar(150) DEFAULT NULL,
   `Email` varchar(250) DEFAULT NULL,
   `Password` varchar(250) DEFAULT NULL,
-  `Spec_ID` int(250) DEFAULT NULL,
-  `fee` int(11) DEFAULT NULL
+  `Spec_ID` int(250) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `doctor`
 --
 
-INSERT INTO `doctor` (`D_ID`, `D_FirstName`, `D_LastName`, `Edu_Level`, `Bmdc_Reg_No`, `DOB`, `Contact_No`, `Email`, `Password`, `Spec_ID`, `fee`) VALUES
-(1, 'Ahnaf ', 'Akif', 'MBBS', '65778544', '0000-00-00', '0944451234', 'ahnafakif@gmail.com', '123456', 0, 500),
-(2, 'Kamal', 'Hasan', 'MBBS', '5545894', '2019-09-09', '4567452', 'kamal@gmail.com', '123', 0, 1000),
-(3, 'Afia', 'Sultana', 'MBBS', '3345678', '1986-09-08', '09876555', 'sul@gmail.com', '123456', 0, 500),
-(4, 'Khondokar', 'Iqbal', 'MBBS', '556774', '1984-09-06', '556432', 'kh@gmail.com', '1234', 0, 1000);
+INSERT INTO `doctor` (`D_ID`, `D_FirstName`, `D_LastName`, `Edu_Level`, `Bmdc_Reg_No`, `DOB`, `Contact_No`, `Email`, `Password`, `Spec_ID`) VALUES
+(1, 'Imtiaz', 'Habib', 'bsc', '1', '0000-00-00', '01681651501', 'imtiazhabib7@gmail.com', '123', 3),
+(2, 'hasan', 'khan', 'fcps', '12345', '2021-09-05', '01681651510', 'hasan@gmail.com', '1234', 1),
+(3, 'jakir', 'hossaine', 'fcps', '124578', '2021-09-06', '01681651501', 'jsjdfsdj@gmail.com', '12456', 4);
 
 -- --------------------------------------------------------
 
@@ -84,9 +91,8 @@ CREATE TABLE `patient` (
 --
 
 INSERT INTO `patient` (`P_ID`, `P_FirstName`, `P_LastName`, `Email`, `Password`, `DOB`) VALUES
-(1, 'Faria', 'Kanak', 'fr@gmail.com', '123456', '1990-10-15'),
-(2, 'Afjal', 'Hossain', 'afjal@gmail.com', '1234567', '1995-09-09'),
-(3, 'Nasrin', 'Akhtar', 'nasrin@gmail.com', '123', '1986-09-08');
+(1, 'kabir', 'Habib', 'a@gmail.com', '123', '0000-00-00'),
+(2, 'munna', 'hossaine', 'munna@gmail.com', '12345', '2021-09-03');
 
 -- --------------------------------------------------------
 
@@ -140,12 +146,6 @@ ALTER TABLE `patient`
   ADD PRIMARY KEY (`P_ID`);
 
 --
--- Indexes for table `specialization`
---
-ALTER TABLE `specialization`
-  ADD PRIMARY KEY (`Spc_ID`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -153,25 +153,19 @@ ALTER TABLE `specialization`
 -- AUTO_INCREMENT for table `appointment`
 --
 ALTER TABLE `appointment`
-  MODIFY `App_ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `App_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `doctor`
 --
 ALTER TABLE `doctor`
-  MODIFY `D_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `D_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `patient`
 --
 ALTER TABLE `patient`
-  MODIFY `P_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `specialization`
---
-ALTER TABLE `specialization`
-  MODIFY `Spc_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `P_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
