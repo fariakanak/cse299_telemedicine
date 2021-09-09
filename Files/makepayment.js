@@ -1,8 +1,9 @@
-const bodyParser = require("body-parser");
-const express = require("express");
+const bodyParser = require('body-parser');
+const express = require('express');
 const SSLCommerzPayment = require('sslcommerz')
 
 const app = express();
+var port = process.env.DB_PORT || 3000;
 
 require("dotenv").config();
 
@@ -88,6 +89,6 @@ app.post("/ssl-payment-ipn", async (req, res, next) =>{
   })
 });
 
-app.listen(process.env.DB_PORT,() =>{
-  console.log('App is running on ${process.env.DB_PORT}');
+app.listen(port ,() =>{
+  console.log('App is running on ${port}');
 })
