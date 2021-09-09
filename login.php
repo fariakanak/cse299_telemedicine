@@ -29,7 +29,9 @@
 						$password=$_POST['password'];
 
 						$sql = "SELECT email, password FROM User_Info WHERE email='".$email."' AND password='".$password."' " ;
-
+						//$sql2 = "SELECT [type] FROM User_Info WHERE email='".$email."' AND password='".$password."' " ;
+                         
+                        $query =  "SELECT * FROM User_Info WHERE email='".$email."' AND password='".$password."' " ;						
 						if ($result = $conn->query($sql)) {
 
 							/* fetch object array */
@@ -38,8 +40,17 @@
 						   if($row>0){
 
 								$_SESSION['Email']=$row[1];
-								header("Location: nearbypharma.php");
-								die();
+								$type = $row['type'];
+                                if($type='p'){
+									header("Location: patientlogged.php");
+									die();
+								}
+								else if($type='d'){
+									header("Location: doctorlogged.php");
+									die();
+								}
+								//header("Location: nearbypharma.php");
+								//die();
 
 						   } else {
 								echo "Email and Password Not Match";
