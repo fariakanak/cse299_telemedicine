@@ -28,7 +28,7 @@
 						$email=$_POST['email'];
 						$password=$_POST['password'];
 
-						$sql = "SELECT email, password FROM User_Info WHERE email='".$email."' AND password='".$password."' " ;
+						$sql = "SELECT * FROM User_Info WHERE email='".$email."' AND password='".$password."' " ;
 						//$sql2 = "SELECT [type] FROM User_Info WHERE email='".$email."' AND password='".$password."' " ;
                          
                         $query =  "SELECT * FROM User_Info WHERE email='".$email."' AND password='".$password."' " ;						
@@ -41,11 +41,11 @@
 
 								$_SESSION['Email']=$row[1];
 								$type = $row['type'];
-                                if($type='p'){
+                                if($type=='p'){
 									header("Location: patientlogged.php");
 									die();
 								}
-								else if($type='d'){
+								else if($type=='d'){
 									header("Location: doctorlogged.php");
 									die();
 								}
