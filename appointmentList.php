@@ -25,10 +25,12 @@
     <img class="logo" src="img/helloDoctor.png" alt="logo">
     <nav>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Appointment</a></li>
-        <li><a href="#">Nearby Pharmacies</a></li>
-        <li><a href="#">Log Out</a></li>
+           <li><a href="aboutus.php">About Us</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="appointmentList.php">Appointment List</a></li>
+		  <li><a href="prescription.php">Prescription</a></li>
+          <li><a href="https://video-app-4933-9049-dev.twil.io">Join My Appointment</a></li>
+          <li><a href="logout.php">Log Out</a></li>
       </ul>
     </nav>
   </header>
